@@ -46,6 +46,7 @@ jobs:
           path: ${{ github.sha }}.zip
           
       - name: setup node
+        uses: actions/setup-node@v3
         with:
           node-version: '16'
           
