@@ -45,8 +45,12 @@ jobs:
           name: zipped-bundle
           path: ${{ github.sha }}.zip
           
+      - name: setup node
+        with:
+          node-version: '16'
+          
       - name: Create Release
-        uses: actions/create-release@v2
+        uses: actions/create-release@v3
         
       
       
