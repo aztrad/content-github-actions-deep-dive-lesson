@@ -46,12 +46,12 @@ jobs:
           path: ${{ github.sha }}.zip
           
       - name: setup node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2
         with:
           node-version: '16'
           
       - name: Create Release
-        uses: actions/create-release@v3
+        uses: actions/create-release@v2
         
       
       
